@@ -136,7 +136,7 @@ export default class JSONEditor extends React.Component {
             value={label}
             addElement={this.addElement}
             removeElement={this.removeElement}
-            showRemoveButton={this.props.showRemoveButton}
+          //showRemoveButton={this.props.showRemoveButton}
             showAddButton={this.props.showAddButton}
             current={data}
             parent={parent}
@@ -170,7 +170,7 @@ export default class JSONEditor extends React.Component {
             addElement={this.addElement}
             removeElement={this.removeElement}
             showRemoveButton={this.props.showRemoveButton}
-            showAddButton={this.props.showAddButton}
+          //showAddButton={this.props.showAddButton}
             current={data}
             parent={parent}
             marginLeft={marginLeft}
@@ -201,7 +201,7 @@ export default class JSONEditor extends React.Component {
           marginBottom={this.props.marginBottom}
           removeElement={this.removeElement}
           saveElement={this.saveElement}
-          showRemoveButton={this.props.showRemoveButton}
+        //showRemoveButton={this.props.showRemoveButton}
           showAddButton={this.props.showAddButton}
           label={label}
           type="number"
@@ -220,7 +220,7 @@ export default class JSONEditor extends React.Component {
           marginBottom={this.props.marginBottom}
           removeElement={this.removeElement}
           saveElement={this.saveElement}
-          showRemoveButton={this.props.showRemoveButton}
+        //showRemoveButton={this.props.showRemoveButton}
           showAddButton={this.props.showAddButton}
           label={label}
           type="text"
@@ -238,7 +238,7 @@ export default class JSONEditor extends React.Component {
           marginLeft={marginLeft}
           marginBottom={this.props.marginBottom}
           removeElement={this.removeElement}
-          showRemoveButton={this.props.showRemoveButton}
+        //showRemoveButton={this.props.showRemoveButton}
           showAddButton={this.props.showAddButton}
           parent={parent}
           currentKey={currentKey}
