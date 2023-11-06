@@ -20,13 +20,7 @@ const styles = {
   dualView: {
     display: "flex",
   },
-  jsonViewer: {
-    borderLeft: "1px dashed white",
-    lineHeight: 1.25,
-    width: "50%",
-    borderLeft: "1px solid lightgrey",
-    margin: 10,
-  },
+  
   jsonEditor: {
     width: "50%",
     fontSize: 12,
