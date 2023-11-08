@@ -138,7 +138,7 @@ export default class JSONEditor extends React.Component {
             value={label}
             addElement={this.addElement}
             removeElement={this.removeElement}
-          showRemoveButton={this.props.showRemoveButton}
+            showRemoveButton={this.props.showRemoveButton}
             showAddButton={this.props.showAddButton}
             current={data}
             parent={parent}
