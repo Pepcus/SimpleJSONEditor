@@ -304,15 +304,15 @@ export default class JSONEditor extends React.Component {
     } else if (view === "dual") {
       return (
         <div style={styles.dualView}>
-          <div style={styles.jsonEditor}>{elems}</div>
-          <div style={styles.jsonViewer}>
-            <JSONViewer
-              data={data.root}
-              collapsible={collapsible}
-              collapsedNodes={synchronizedCollapse ? collapsedNodes : {}}
-              styles={styles}
-            />
-          </div>
+        <div style={styles.jsonEditor}>{elems}</div>
+        <div style={styles.jsonViewer}>
+          <JSONViewer
+            data={data.root}
+            collapsible={collapsible}
+            collapsedNodes={synchronizedCollapse ? collapsedNodes : {}}
+            styles={styles}
+          />
+        </div>
         </div>
       );
     }
