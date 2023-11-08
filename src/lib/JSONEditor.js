@@ -34,7 +34,9 @@ export default class JSONEditor extends React.Component {
     collapsedNodes: {},
     synchronizedCollapse: true, //if in dual view when editor is collapsed, viewer is also collapsed
     showAddButton: true, //show + icon to add elements in object/array
-    showRemoveButton: true, //show x icon to remove elements from object/array,
+    showAddButtonObject: false, //show + icon to add elements in object case
+    showRemoveButtonObject:true,// show x icon to remove from object,
+    showRemoveButton: false, //show x icon to remove elements ,
     styles: jsonEditorDefaultStyles, //pass to override styles
   };
 
@@ -171,8 +173,8 @@ export default class JSONEditor extends React.Component {
             value={label}
             addElement={this.addElement}
             removeElement={this.removeElement}
-            showRemoveButton={this.props.showRemoveButton}
-            showAddButton={this.props.showAddButton}
+            showRemoveButton={this.props.showRemoveButtonObject}
+            showAddButton={this.props.showAddButtonObject}
             current={data}
             parent={parent}
             marginLeft={marginLeft}
