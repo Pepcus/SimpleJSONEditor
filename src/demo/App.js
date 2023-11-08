@@ -34,7 +34,7 @@ const styles = {
     /*color: "#3E3D32"*/
   },
   label: {
-    color: "DeepPink",
+    color: "Red",
     marginTop: 3,
   },
   value: {
@@ -44,15 +44,17 @@ const styles = {
     display: "flex",
   },
   withChildrenLabel: {
-    color: "DeepPink",
+    color: "Red",
   },
   select: {
+    height:25,
     borderRadius: 3,
     borderColor: "grey",
     backgroundColor: "DimGray",
     color: "khaki",
   },
   input: {
+    height:25,
     borderRadius: 3,
     border: "1px solid #272822",
     padding: 2,
@@ -70,8 +72,8 @@ const styles = {
   },
   removeButton: {
     cursor: "pointer",
-    color: "magenta",
-    marginLeft: 15,
+    color: "black",
+    marginLeft: 180,
     fontSize: 12,
   },
   saveButton: {
