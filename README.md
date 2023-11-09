@@ -1,6 +1,6 @@
 ### Getting started
 
-`npm i react-json-editor-viewer`
+`npm add https://github.com/pepcus-Aish/SimpleJSONEditor.git`
 
 ### Easily view json in react
 
@@ -25,28 +25,15 @@ import { JSONViewer } from "react-json-editor-viewer";
       description: 'another',
     },
     "employees":[    
-        {"name":"Ram", "email":"ram@gmail.com", "age":23},    
-        {"name":"Shyam", "email":"shyam23@gmail.com", "age":28},  
-        {"name":"John", "email":"john@gmail.com", "age":33},    
-        {"name":"Bob", "email":"bob32@gmail.com", "age":41}   
-    ]  ,
-    "member":[    
-        {"name":"Ram", "email":"ram@gmail.com", "age":23},    
-        {"name":"Shyam", "email":"shyam23@gmail.com", "age":28},  
-        {"name":"John", "email":"john@gmail.com", "age":33},    
-        {"name":"Bob", "email":"bob32@gmail.com", "age":41}   
-    ]  ,
-    "players":[    
-        {"name":"Ram", "email":"ram@gmail.com", "age":23},    
-        {"name":"Shyam", "email":"shyam23@gmail.com", "age":28},  
-        {"name":"John", "email":"john@gmail.com", "age":33},    
+        {"name":"Ram", "email":"ram@gmail.com", "age":23},       
         {"name":"Bob", "email":"bob32@gmail.com", "age":41}   
     ]  
   }}
 />;
 ```
 
-![Alt text](images/jsonviewer.png?raw=true "JSON Viewer")
+![image](https://github.com/pepcus-Aish/SimpleJSONEditor/assets/141809285/cca372bc-7845-40f8-9c58-0a10a32bd663)
+
 
 ### Make your json viewer collapsible
 
@@ -72,30 +59,16 @@ import { JSONViewer } from "react-json-editor-viewer";
       description: 'another',
     },
     "employees":[    
-        {"name":"Ram", "email":"ram@gmail.com", "age":23},    
-        {"name":"Shyam", "email":"shyam23@gmail.com", "age":28},  
-        {"name":"John", "email":"john@gmail.com", "age":33},    
+        {"name":"Ram", "email":"ram@gmail.com", "age":23},       
         {"name":"Bob", "email":"bob32@gmail.com", "age":41}   
-    ]  ,
-    "member":[    
-        {"name":"Ram", "email":"ram@gmail.com", "age":23},    
-        {"name":"Shyam", "email":"shyam23@gmail.com", "age":28},  
-        {"name":"John", "email":"john@gmail.com", "age":33},    
-        {"name":"Bob", "email":"bob32@gmail.com", "age":41}   
-    ]  ,
-    "players":[    
-        {"name":"Ram", "email":"ram@gmail.com", "age":23},    
-        {"name":"Shyam", "email":"shyam23@gmail.com", "age":28},  
-        {"name":"John", "email":"john@gmail.com", "age":33},    
-        {"name":"Bob", "email":"bob32@gmail.com", "age":41}   
-    ]  
+    ] 
   }
 }
   collapsible
 />;
 ```
+![image](https://github.com/pepcus-Aish/SimpleJSONEditor/assets/141809285/d626513f-dc7b-4aa7-8d93-3b3e8ec18f5a)
 
-![Alt text](images/jsonviewer_collapse.png?raw=true "JSON Viewer")
 
 ### Edit json easily and listen to changes in the data, hover on elements to add/remove keys
 
@@ -129,29 +102,16 @@ onJsonChange(key, value, parent, data){
     },
     "employees":[    
         {"name":"Ram", "email":"ram@gmail.com", "age":23},    
-        {"name":"Shyam", "email":"shyam23@gmail.com", "age":28},  
-        {"name":"John", "email":"john@gmail.com", "age":33},    
         {"name":"Bob", "email":"bob32@gmail.com", "age":41}   
-    ]  ,
-    "member":[    
-        {"name":"Ram", "email":"ram@gmail.com", "age":23},    
-        {"name":"Shyam", "email":"shyam23@gmail.com", "age":28},  
-        {"name":"John", "email":"john@gmail.com", "age":33},    
-        {"name":"Bob", "email":"bob32@gmail.com", "age":41}   
-    ]  ,
-    "players":[    
-        {"name":"Ram", "email":"ram@gmail.com", "age":23},    
-        {"name":"Shyam", "email":"shyam23@gmail.com", "age":28},  
-        {"name":"John", "email":"john@gmail.com", "age":33},    
-        {"name":"Bob", "email":"bob32@gmail.com", "age":41}   
-    ]  
+    ] 
   }}
   collapsible
   onChange={this.onJsonChange}
 />
 ```
 
-![Alt text](images/jsoneditor.png?raw=true "JSON Viewer")
+![image](https://github.com/pepcus-Aish/SimpleJSONEditor/assets/141809285/dcf5212b-8296-4904-9d2b-0602a188e182)
+
 
 ### View both the json editor and viewer side by side
 
@@ -184,23 +144,9 @@ onJsonChange(key, value, parent, data){
       description: 'another',
     },
     "employees":[    
-        {"name":"Ram", "email":"ram@gmail.com", "age":23},    
-        {"name":"Shyam", "email":"shyam23@gmail.com", "age":28},  
-        {"name":"John", "email":"john@gmail.com", "age":33},    
+        {"name":"Ram", "email":"ram@gmail.com", "age":23},       
         {"name":"Bob", "email":"bob32@gmail.com", "age":41}   
-    ]  ,
-    "member":[    
-        {"name":"Ram", "email":"ram@gmail.com", "age":23},    
-        {"name":"Shyam", "email":"shyam23@gmail.com", "age":28},  
-        {"name":"John", "email":"john@gmail.com", "age":33},    
-        {"name":"Bob", "email":"bob32@gmail.com", "age":41}   
-    ]  ,
-    "players":[    
-        {"name":"Ram", "email":"ram@gmail.com", "age":23},    
-        {"name":"Shyam", "email":"shyam23@gmail.com", "age":28},  
-        {"name":"John", "email":"john@gmail.com", "age":33},    
-        {"name":"Bob", "email":"bob32@gmail.com", "age":41}   
-    ]  
+    ] 
   }}
   collapsible
   onChange={this.onJsonChange}
@@ -208,7 +154,8 @@ onJsonChange(key, value, parent, data){
 />
 ```
 
-![Alt text](images/jsoneditor_dual.png?raw=true "JSON Viewer")
+![image](https://github.com/pepcus-Aish/SimpleJSONEditor/assets/141809285/35469220-f6f6-45ec-9edf-76508252212a)
+
 
 ### Configure your optional custom styles
 
