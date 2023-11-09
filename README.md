@@ -9,14 +9,39 @@ import { JSONViewer } from "react-json-editor-viewer";
 
 <JSONViewer
   data={{
-    the: "men",
-    that: "landed",
-    on: "the",
-    moon: "were",
-    maybe: 2,
-    i: "think",
-    probably: ["neil armstrong", "buzz aldrin"],
-    am_i_right: true,
+    name: 'pepcus',
+    age: null,
+    match :true,
+    address: [
+      'Panyu Shiqiao on Canton',
+      'Tianhe',
+      {
+        city: 'Indore',
+      },
+    ],
+    others: {
+      id: 1246,
+      joinTime: '2017-08-20. 10:20',
+      description: 'another',
+    },
+    "employees":[    
+        {"name":"Ram", "email":"ram@gmail.com", "age":23},    
+        {"name":"Shyam", "email":"shyam23@gmail.com", "age":28},  
+        {"name":"John", "email":"john@gmail.com", "age":33},    
+        {"name":"Bob", "email":"bob32@gmail.com", "age":41}   
+    ]  ,
+    "member":[    
+        {"name":"Ram", "email":"ram@gmail.com", "age":23},    
+        {"name":"Shyam", "email":"shyam23@gmail.com", "age":28},  
+        {"name":"John", "email":"john@gmail.com", "age":33},    
+        {"name":"Bob", "email":"bob32@gmail.com", "age":41}   
+    ]  ,
+    "players":[    
+        {"name":"Ram", "email":"ram@gmail.com", "age":23},    
+        {"name":"Shyam", "email":"shyam23@gmail.com", "age":28},  
+        {"name":"John", "email":"john@gmail.com", "age":33},    
+        {"name":"Bob", "email":"bob32@gmail.com", "age":41}   
+    ]  
   }}
 />;
 ```
@@ -29,16 +54,43 @@ import { JSONViewer } from "react-json-editor-viewer";
 import { JSONViewer } from "react-json-editor-viewer";
 
 <JSONViewer
-  data={{
-    the: "men",
-    that: "landed",
-    on: "the",
-    moon: "were",
-    maybe: 2,
-    i: "think",
-    probably: ["neil armstrong", "buzz aldrin"],
-    am_i_right: true,
-  }}
+  data={
+{
+    name: 'pepcus',
+    age: null,
+    match :true,
+    address: [
+      'Panyu Shiqiao on Canton',
+      'Tianhe',
+      {
+        city: 'Indore',
+      },
+    ],
+    others: {
+      id: 1246,
+      joinTime: '2017-08-20. 10:20',
+      description: 'another',
+    },
+    "employees":[    
+        {"name":"Ram", "email":"ram@gmail.com", "age":23},    
+        {"name":"Shyam", "email":"shyam23@gmail.com", "age":28},  
+        {"name":"John", "email":"john@gmail.com", "age":33},    
+        {"name":"Bob", "email":"bob32@gmail.com", "age":41}   
+    ]  ,
+    "member":[    
+        {"name":"Ram", "email":"ram@gmail.com", "age":23},    
+        {"name":"Shyam", "email":"shyam23@gmail.com", "age":28},  
+        {"name":"John", "email":"john@gmail.com", "age":33},    
+        {"name":"Bob", "email":"bob32@gmail.com", "age":41}   
+    ]  ,
+    "players":[    
+        {"name":"Ram", "email":"ram@gmail.com", "age":23},    
+        {"name":"Shyam", "email":"shyam23@gmail.com", "age":28},  
+        {"name":"John", "email":"john@gmail.com", "age":33},    
+        {"name":"Bob", "email":"bob32@gmail.com", "age":41}   
+    ]  
+  }
+}
   collapsible
 />;
 ```
@@ -60,14 +112,39 @@ onJsonChange(key, value, parent, data){
 
 <JSONEditor
   data={{
-    the: "men",
-    that: "landed",
-    on: "the",
-    moon: "were",
-    maybe: 2,
-    i: "think",
-    probably: ["neil armstrong", "buzz aldrin"],
-    am_i_right: true
+    name: 'pepcus',
+    age: null,
+    match :true,
+    address: [
+      'Panyu Shiqiao on Canton',
+      'Tianhe',
+      {
+        city: 'Indore',
+      },
+    ],
+    others: {
+      id: 1246,
+      joinTime: '2017-08-20. 10:20',
+      description: 'another',
+    },
+    "employees":[    
+        {"name":"Ram", "email":"ram@gmail.com", "age":23},    
+        {"name":"Shyam", "email":"shyam23@gmail.com", "age":28},  
+        {"name":"John", "email":"john@gmail.com", "age":33},    
+        {"name":"Bob", "email":"bob32@gmail.com", "age":41}   
+    ]  ,
+    "member":[    
+        {"name":"Ram", "email":"ram@gmail.com", "age":23},    
+        {"name":"Shyam", "email":"shyam23@gmail.com", "age":28},  
+        {"name":"John", "email":"john@gmail.com", "age":33},    
+        {"name":"Bob", "email":"bob32@gmail.com", "age":41}   
+    ]  ,
+    "players":[    
+        {"name":"Ram", "email":"ram@gmail.com", "age":23},    
+        {"name":"Shyam", "email":"shyam23@gmail.com", "age":28},  
+        {"name":"John", "email":"john@gmail.com", "age":33},    
+        {"name":"Bob", "email":"bob32@gmail.com", "age":41}   
+    ]  
   }}
   collapsible
   onChange={this.onJsonChange}
@@ -91,14 +168,39 @@ onJsonChange(key, value, parent, data){
 
 <JSONEditor
   data={{
-    the: "men",
-    that: "landed",
-    on: "the",
-    moon: "were",
-    maybe: 2,
-    i: "think",
-    probably: ["neil armstrong", "buzz aldrin"],
-    am_i_right: true
+    name: 'pepcus',
+    age: null,
+    match :true,
+    address: [
+      'Panyu Shiqiao on Canton',
+      'Tianhe',
+      {
+        city: 'Indore',
+      },
+    ],
+    others: {
+      id: 1246,
+      joinTime: '2017-08-20. 10:20',
+      description: 'another',
+    },
+    "employees":[    
+        {"name":"Ram", "email":"ram@gmail.com", "age":23},    
+        {"name":"Shyam", "email":"shyam23@gmail.com", "age":28},  
+        {"name":"John", "email":"john@gmail.com", "age":33},    
+        {"name":"Bob", "email":"bob32@gmail.com", "age":41}   
+    ]  ,
+    "member":[    
+        {"name":"Ram", "email":"ram@gmail.com", "age":23},    
+        {"name":"Shyam", "email":"shyam23@gmail.com", "age":28},  
+        {"name":"John", "email":"john@gmail.com", "age":33},    
+        {"name":"Bob", "email":"bob32@gmail.com", "age":41}   
+    ]  ,
+    "players":[    
+        {"name":"Ram", "email":"ram@gmail.com", "age":23},    
+        {"name":"Shyam", "email":"shyam23@gmail.com", "age":28},  
+        {"name":"John", "email":"john@gmail.com", "age":33},    
+        {"name":"Bob", "email":"bob32@gmail.com", "age":41}   
+    ]  
   }}
   collapsible
   onChange={this.onJsonChange}
