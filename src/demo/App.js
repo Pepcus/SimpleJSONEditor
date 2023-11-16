@@ -1,5 +1,5 @@
 import React from "react";
-import { JSONEditor } from "../lib";
+import { JSONEditor ,JSONViewer} from "../lib";
 // npm run build
 // to compile a production version
 //npm publish to publish
@@ -11,13 +11,13 @@ const App = () => (
       data={data}
       collapsible
       onChange={this.onJsonChange}
-      styles={styles}
+        styles={styles}
     />
   </div>
 );
 
 const styles = {
-  dualView: {
+   dualView: {
     display: "flex",
   },
   
@@ -34,9 +34,20 @@ const styles = {
     /*color: "#3E3D32"*/
   },
   label: {
-    color: "Red",
-    marginTop: 3,
+    display:"flex",
+    justifyContent:'center',
+    borderRadius:4,
+    color: "red",
+    marginLeft: 10,
+    height: 25,
+    alignItems: 'center',
+    width:150,
+    alignItems:'center',
+    textTransfrom:'uppercase'
+    
+    
   },
+  
   value: {
     marginLeft: 10,
   },
@@ -47,34 +58,43 @@ const styles = {
     color: "Red",
   },
   select: {
+    backgroundColor: '#e1d9d9',
+    paddingRight: 25,
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    paddingLeft: 25,
     height:25,
     borderRadius: 3,
     borderColor: "grey",
-    backgroundColor: "DimGray",
-    color: "khaki",
+    color: "Black",
   },
   input: {
     height:25,
     borderRadius: 3,
     border: "1px solid #272822",
-    padding: 2,
     fontFamily: "Lucida Console, monospace",
     fontSize: 12,
-    backgroundColor: "gray",
-    color: "khaki",
+    backgroundColor: '#e1d9d9',
+    paddingRight: 25,
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    paddingLeft: 25,
+    color: "Black",
     width: "200%",
   },
   addButton: {
     cursor: "pointer",
-    color: "LightGreen",
+    color: "Green",
     marginLeft: 15,
-    fontSize: 12,
+    fontSize: 18,
   },
   removeButton: {
     cursor: "pointer",
-    color: "black",
-    marginLeft: 180,
-    fontSize: 12,
+    color: "Red",
+    marginLeft: 50,
+    fontSize: 18,
   },
   saveButton: {
     cursor: "pointer",
@@ -95,7 +115,7 @@ const styles = {
     fontSize: 12,
   },
   property: {
-    color: "DeepPink",
+    color: "red",
     fontSize: 12,
   },
   collapseIcon: {
@@ -124,23 +144,9 @@ const data =
       description: 'another',
     },
     "employees":[    
-        {"name":"Ram", "email":"ram@gmail.com", "age":23},    
-        {"name":"Shyam", "email":"shyam23@gmail.com", "age":28},  
-        {"name":"John", "email":"john@gmail.com", "age":33},    
+        {"name":"Ram", "email":"ram@gmail.com", "age":23},        
         {"name":"Bob", "email":"bob32@gmail.com", "age":41}   
-    ]  ,
-    "member":[    
-        {"name":"Ram", "email":"ram@gmail.com", "age":23},    
-        {"name":"Shyam", "email":"shyam23@gmail.com", "age":28},  
-        {"name":"John", "email":"john@gmail.com", "age":33},    
-        {"name":"Bob", "email":"bob32@gmail.com", "age":41}   
-    ]  ,
-    "players":[    
-        {"name":"Ram", "email":"ram@gmail.com", "age":23},    
-        {"name":"Shyam", "email":"shyam23@gmail.com", "age":28},  
-        {"name":"John", "email":"john@gmail.com", "age":33},    
-        {"name":"Bob", "email":"bob32@gmail.com", "age":41}   
-    ]  
+    ]    
   }
 
 export default App;
