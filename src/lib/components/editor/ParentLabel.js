@@ -47,7 +47,7 @@ export default class ParentLabel extends React.Component {
         <div title="collapse node" style={{ marginLeft: 5 }}>
           {getCollapseIcon(marginLeft, currentKey)}
         </div>
-        <div hidden={!this.state.hovering} style={{ marginLeft: 5 }}>
+        <div hidden={!this.state.hovering} style={{ marginLeft: 10 }}>
           <AddIcon
             hidden={!showAddButton}
             addElement={addElement}

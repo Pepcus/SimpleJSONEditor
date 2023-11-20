@@ -11,16 +11,20 @@ const App = () => (
       data={data}
       collapsible
       onChange={this.onJsonChange}
-        styles={styles}
+        // styles={styles}
     />
   </div>
 );
 
 const styles = {
-   dualView: {
+  dualView: {
     display: "flex",
   },
-  
+  jsonViewer: {
+    borderLeft: "1px solid lightgrey",
+    width: "50%",
+    margin: 10,
+  },
   jsonEditor: {
     width: "50%",
     fontSize: 12,
@@ -35,19 +39,13 @@ const styles = {
   },
   label: {
     display:"flex",
-    justifyContent:'center',
     borderRadius:4,
     color: "red",
     marginLeft: 10,
-    height: 25,
+    height: 30,
     alignItems: 'center',
-    width:150,
-    alignItems:'center',
-    textTransfrom:'uppercase'
-    
     
   },
-  
   value: {
     marginLeft: 10,
   },
@@ -93,7 +91,7 @@ const styles = {
   removeButton: {
     cursor: "pointer",
     color: "Red",
-    marginLeft: 50,
+    marginLeft: 180,
     fontSize: 18,
   },
   saveButton: {

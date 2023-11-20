@@ -15,24 +15,13 @@ export const jsonEditorDefaultStyles = {
   },
   jsonEditor: {
     width: "50%",
-    fontSize: 12,
-    fontFamily: "Lucida Console, monospace",
-    lineHeight: 1.25,
-  },
-  root: {
-    fontSize: 12,
-    fontFamily: "Lucida Console, monospace",
-    lineHeight: 1.25,
-    /*color: "#3E3D32"*/
+    fontSize: 14,
+    fontFamily: "monospace",
+    margin: 10,
   },
   label: {
-    display:"flex",
-    borderRadius:4,
-    color: "red",
-    marginLeft: 10,
-    height: 30,
-    alignItems: 'center',
-    
+    color: "#c00",
+    marginTop: 4,
   },
   value: {
     marginLeft: 10,
@@ -40,76 +29,57 @@ export const jsonEditorDefaultStyles = {
   row: {
     display: "flex",
   },
+  root: {
+    fontSize: 14,
+    fontFamily: "monospace",
+  },
   withChildrenLabel: {
-    color: "Red",
+    color: "#a52a2a",
   },
   select: {
-    backgroundColor: '#e1d9d9',
-    paddingRight: 25,
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    paddingLeft: 25,
-    height:25,
     borderRadius: 3,
-    borderColor: "grey",
-    color: "Black",
+    borderColor: "#d3d3d3",
   },
   input: {
-    height:25,
     borderRadius: 3,
-    border: "1px solid #272822",
-    fontFamily: "Lucida Console, monospace",
-    fontSize: 12,
-    backgroundColor: '#e1d9d9',
-    paddingRight: 25,
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    paddingLeft: 25,
-    color: "Black",
-    width: "200%",
+    border: "1px solid #d3d3d3",
+    padding: 3,
   },
   addButton: {
     cursor: "pointer",
-    color: "Green",
+    color: "black",
     marginLeft: 15,
-    fontSize: 18,
+    fontSize: 14,
   },
   removeButton: {
     cursor: "pointer",
-    color: "Red",
-    marginLeft: 180,
-    fontSize: 18,
+    color: "red",
+    marginLeft: 15,
+    fontSize: 14,
   },
   saveButton: {
     cursor: "pointer",
     color: "green",
     marginLeft: 15,
-    fontSize: 12,
+    fontSize: 14,
   },
   builtin: {
-    color: "green",
-    fontSize: 12,
+    color: "#00f",
   },
   text: {
-    color: "black",
-    fontSize: 12,
+    color: "#077",
   },
   number: {
-    color: "purple",
-    fontSize: 12,
+    color: "#a0a",
   },
   property: {
-    color: "red",
-    fontSize: 12,
+    color: "#c00",
   },
   collapseIcon: {
     cursor: "pointer",
-    fontSize: 10,
-    color: "teal",
   },
 };
+
 
 export const jsonViewerDefaultStyles = {
   root: {
