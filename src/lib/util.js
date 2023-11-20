@@ -80,6 +80,7 @@ export const jsonEditorDefaultStyles = {
   },
 };
 
+
 export const jsonViewerDefaultStyles = {
   root: {
     margin: 5,
